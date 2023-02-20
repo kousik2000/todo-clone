@@ -1,0 +1,59 @@
+.header-container {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 10px 40px;
+}
+.logo-name {
+  font-family: Roboto;
+  font-size: 40px;
+  color: white;
+}
+.list-container {
+  display: none;
+}
+
+.list-container ul li {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-family: roboto;
+  padding: 5px;
+  padding-left: 40px;
+}
+.profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background-size: cover;
+}
+.app-list-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.app-list-container ul li {
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  font-family: roboto;
+  padding: 5px;
+  padding-left: 40px;
+}
+
+@media (min-width: 800px) {
+  .list-container {
+    display: block;
+  }
+  .app-list-container {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .app-list-container ul li {
+    padding-left: 10px;
+  }
+}
